@@ -43,7 +43,7 @@ body {
 }
 
 .wrapper .navbar{
-  background-image: url(C:\Users\lara\moviestar\src\images\hero-1.jpg);
+  background-image: url(../images/hero-1.jpg);
   width: 1500px;
   height: 600px;
   top: -200px;
@@ -351,7 +351,7 @@ opacity: 1;
 }
 .all{
   display: inline-flex;
-  background: url(C:\Users\lara\moviestar\src\images\back.jpg);
+  background: url(../images/back.jpg);
   margin-bottom: 100px;
   padding-top: 70px;
   padding-bottom: 70px;
