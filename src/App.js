@@ -12,6 +12,7 @@ import styled from "styled-components";
 import axios from 'axios';
 import MovieComponent from "./component/MovieComponent.JS";
 import MovieInfoComponent from "./component/MovieInfoComponent.JS";
+import { accordionData } from "../src/accodionData";
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {
@@ -108,19 +109,19 @@ function App() {
   
 
 
-<BrowserRouter>
+    <><BrowserRouter>
 
-<SearchBox>
-          <SearchIcon src="/search-icon.svg"/>
-          <SearchInput placeholder="Search Movie" value={searchQuery} onChange={onTextChange} />
-</SearchBox>
-{selectedMovie && <MovieInfoComponent selectedMovie={selectedMovie} onMovieSelect={onMovieSelect} />}
+      <SearchBox>
+        <SearchIcon src="/search-icon.svg" />
+        <SearchInput placeholder="Search Movie" value={searchQuery} onChange={onTextChange} />
+      </SearchBox>
+      {selectedMovie && <MovieInfoComponent selectedMovie={selectedMovie} onMovieSelect={onMovieSelect} />}
       <MovieListContainer>
         {movieList?.length
           ? movieList.map((movie, index) => <MovieComponent key={index} movie={movie} onMovieSelect={onMovieSelect} />)
           : "NO Movie Search"}
-</MovieListContainer>
-       
+      </MovieListContainer>
+
       <nav>
         <ul>
           <li>
@@ -140,9 +141,9 @@ function App() {
           </li>
         </ul>
       </nav>
-      
-      
-     <Switch>
+
+
+      <Switch>
         <Route path="/About" component={About} exact />
         <Route path="/" component={Home} exact />
         <Route path="/News" component={News} exact />
@@ -152,7 +153,14 @@ function App() {
         <Route path="/Newmovies" component={Newmovie} exact />
       </Switch>
 
-</BrowserRouter>
+    </BrowserRouter><div>
+        <h1>{accordionData}</h1>
+        <div className="accordion">
+          {accordionData.map(({ title, content }) => (
+            <Accordion title={title} content={content} />
+          ))}
+        </div>
+      </div></>
       
      
   )
