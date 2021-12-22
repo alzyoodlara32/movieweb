@@ -405,63 +405,66 @@ function Newmovie() {
                                                     </div>
                                                     {isActive && <div className="accordion-content">{content}</div>}
                                                 </div>
-                                                <h3 className="ui-accordion-header ui-corner-top ui-accordion-header-collapsed ui-corner-all ui-state-default ui-accordion-icons" role="tab" id="ui-id-9" aria-controls="ui-id-10" aria-selected="false" aria-expanded="false" tabindex="-1"><span className="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e"></span>The Amazing Hubble</h3>
-                                                <div className="panel ui-corner-bottom ui-helper-reset ui-widget-content" id="ui-id-10" aria-labelledby="ui-id-9" role="tabpanel" aria-hidden="true" style={{ display: "none", height: "170px" }}>
-                                                    <p>Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer
-                                                        ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit
-                                                        amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut
-                                                        odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.</p>
-                                                </div>
-                                                <h3 className="ui-accordion-header ui-corner-top ui-accordion-header-collapsed ui-corner-all ui-state-default ui-accordion-icons" role="tab" id="ui-id-11" aria-controls="ui-id-12" aria-selected="false" aria-expanded="false" tabindex="-1"><span className="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e"></span>Vacation Home Rental Success</h3>
-                                                <div className="panel ui-corner-bottom ui-helper-reset ui-widget-content" id="ui-id-12" aria-labelledby="ui-id-11" role="tabpanel" aria-hidden="true" style={{ display: "none", height: "170px" }}>
-                                                    <p>Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer
-                                                        ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit
-                                                        amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut
-                                                        odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.</p>
+
+
+                                                <div className="accordion-item">
+                                                    <div className="accordion-title" onClick={() => setIsActive(!isActive)}>
+                                                        <div>{title}</div>
+                                                        <div>{isActive ? '-' : '+'}</div>
+                                                    </div>
+                                                    {isActive && <div className="accordion-content">{content}</div>}
                                                 </div>
 
 
+                                                <div className="accordion-item">
+                                                    <div className="accordion-title" onClick={() => setIsActive(!isActive)}>
+                                                        <div>{title}</div>
+                                                        <div>{isActive ? '-' : '+'}</div>
+                                                    </div>
+                                                    {isActive && <div className="accordion-content">{content}</div>}
+                                                </div>
 
-                                                <h3 className="ui-accordion-header ui-corner-top ui-accordion-header-collapsed ui-corner-all ui-state-default ui-accordion-icons" role="tab" id="ui-id-13" aria-controls="ui-id-14" aria-selected="false" aria-expanded="false" tabindex="-1"><span className="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e"></span>When The Morning Dawns</h3>
-                                                <div className="panel ui-corner-bottom ui-helper-reset ui-widget-content" id="ui-id-14" aria-labelledby="ui-id-13" role="tabpanel" aria-hidden="true" style={{ display: "none", height: "170px" }}>
-                                                    <p>Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer
-                                                        ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit
-                                                        amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut
-                                                        odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.</p>
+
+
+                                                <div className="accordion-item">
+                                                    <div className="accordion-title" onClick={() => setIsActive(!isActive)}>
+                                                        <div>{title}</div>
+                                                        <div>{isActive ? '-' : '+'}</div>
+                                                    </div>
+                                                    {isActive && <div className="accordion-content">{content}</div>}
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                     <div className="col-sm-5 col-sm-push-2">
                                         <div className="accordion pill-style ui-accordion ui-widget ui-helper-reset" role="tablist">
-                                            <h3 className="ui-accordion-header ui-corner-top ui-state-default ui-accordion-header-active ui-state-active ui-accordion-icons" role="tab" id="ui-id-15" aria-controls="ui-id-16" aria-selected="true" aria-expanded="true" tabindex="0">
-                                                <span className="ui-accordion-header-icon ui-icon ui-icon-triangle-1-s"></span>Astronomy Or Astrology</h3>
-                                            <div className="panel ui-corner-bottom ui-helper-reset ui-widget-content ui-accordion-content-active" id="ui-id-16" aria-labelledby="ui-id-15" role="tabpanel" aria-hidden="false" style={{ display: "block", height: "170px" }}>
-                                                <p>Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer
-                                                    ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit
-                                                    amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut
-                                                    odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.</p>
+                                            <div className="accordion-item">
+                                                <div className="accordion-title" onClick={() => setIsActive(!isActive)}>
+                                                    <div>{title}</div>
+                                                    <div>{isActive ? '-' : '+'}</div>
+                                                </div>
+                                                {isActive && <div className="accordion-content">{content}</div>}
                                             </div>
-                                            <h3 className="ui-accordion-header ui-corner-top ui-accordion-header-collapsed ui-corner-all ui-state-default ui-accordion-icons" role="tab" id="ui-id-17" aria-controls="ui-id-18" aria-selected="false" aria-expanded="false" tabindex="-1"><span className="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e"></span>The Amazing Hubble</h3>
-                                            <div className="panel ui-corner-bottom ui-helper-reset ui-widget-content" id="ui-id-18" aria-labelledby="ui-id-17" role="tabpanel" aria-hidden="true" style={{ display: "none", height: "170px" }}>
-                                                <p>Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer
-                                                    ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit
-                                                    amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut
-                                                    odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.</p>
+                                            <div className="accordion-item">
+                                                <div className="accordion-title" onClick={() => setIsActive(!isActive)}>
+                                                    <div>{title}</div>
+                                                    <div>{isActive ? '-' : '+'}</div>
+                                                </div>
+                                                {isActive && <div className="accordion-content">{content}</div>}
                                             </div>
-                                            <h3 className="ui-accordion-header ui-corner-top ui-accordion-header-collapsed ui-corner-all ui-state-default ui-accordion-icons" role="tab" id="ui-id-19" aria-controls="ui-id-20" aria-selected="false" aria-expanded="false" tabindex="-1"><span className="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e"></span>Vacation Home Rental Success</h3>
-                                            <div className="panel ui-corner-bottom ui-helper-reset ui-widget-content" id="ui-id-20" aria-labelledby="ui-id-19" role="tabpanel" aria-hidden="true" style={{ display: "none", height: "170px" }}>
-                                                <p>Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer
-                                                    ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit
-                                                    amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut
-                                                    odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.</p>
+                                            <div className="accordion-item">
+                                                <div className="accordion-title" onClick={() => setIsActive(!isActive)}>
+                                                    <div>{title}</div>
+                                                    <div>{isActive ? '-' : '+'}</div>
+                                                </div>
+                                                {isActive && <div className="accordion-content">{content}</div>}
                                             </div>
-                                            <h3 className="ui-accordion-header ui-corner-top ui-accordion-header-collapsed ui-corner-all ui-state-default ui-accordion-icons" role="tab" id="ui-id-21" aria-controls="ui-id-22" aria-selected="false" aria-expanded="false" tabindex="-1"><span className="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e"></span>When The Morning Dawns</h3>
-                                            <div className="panel ui-corner-bottom ui-helper-reset ui-widget-content" id="ui-id-22" aria-labelledby="ui-id-21" role="tabpanel" aria-hidden="true" style={{ display: "none", height: "170px" }}>
-                                                <p>Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer
-                                                    ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit
-                                                    amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut
-                                                    odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.</p>
+                                            <div className="accordion-item">
+                                                <div className="accordion-title" onClick={() => setIsActive(!isActive)}>
+                                                    <div>{title}</div>
+                                                    <div>{isActive ? '-' : '+'}</div>
+                                                </div>
+                                                {isActive && <div className="accordion-content">{content}</div>}
                                             </div>
                                         </div>
                                     </div>
